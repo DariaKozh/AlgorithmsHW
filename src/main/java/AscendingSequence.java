@@ -1,7 +1,7 @@
 public class AscendingSequence {
 
     //0, 1, 2, 3, 4, 5
-    //ñòğîèì âîçğàñòàşùóş ïîñëåäîâàòåëüíîñòü è êëàäåì åå â ìàññèâ
+    //ÑÑ‚Ñ€Ğ¾Ğ¸Ğ¼ Ğ²Ğ¾Ğ·Ñ€Ğ°ÑÑ‚Ğ°ÑÑ‰ÑƒÑ Ğ¿Ğ¾ÑĞ»ĞµĞ´Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚ÑŒ Ğ¸ ĞºĞ»Ğ°Ğ´ĞµĞ¼ ĞµĞµ Ğ² Ğ¼Ğ°ÑÑĞ¸Ğ²
 
     public int[] ascendingSequenceAlgorithm(int start, int end, int step) {
         if (step > 0 && start < end) {
