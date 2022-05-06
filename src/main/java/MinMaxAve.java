@@ -9,7 +9,43 @@ public class MinMaxAve {
     //
     //Test Data:
     //({1, 2, 3, 4, 5, 6, 7, 8}, 2, 6) ?  {3, 7, 5}
-    public static int[] averageMinMaxArray(int array[]) {
+
+    public int[] MinMaxAveAlgorithm(int[] array, int start, int end) {
+
+        if (array.length > 0 && start > 0 && end > 0 && start <= array.length - 1 && end <= array.length - 1
+                && start <= end) {
+
+
+            int average;
+            int sum = 0;
+            int min = array[start];
+            int max = array[end];
+
+            for (int i = start; i <= end; i++) {
+
+                sum = sum + array[i];
+                if (min > array[i]) {
+                    min = array[i];
+                }
+                if (max < array[i]) {
+                    max = array[i];
+                }
+            }
+
+            average = sum / (end - start + 1);
+
+            int[] minMaxAve = new int[]{min, max, average};
+
+            return minMaxAve;
+        } else {
+
+            return new int[]{};
+        }
+    }
+
+
+    //Это второй способ (мое решение). Он сложный.
+    /*public static int[] averageMinMaxArray(int array[]) {
         int average;
         int sum = 0;
         int min = Integer.MAX_VALUE;
@@ -56,6 +92,5 @@ public class MinMaxAve {
 
             return new int[]{};
         }
-
-    }
+    }*/
 }

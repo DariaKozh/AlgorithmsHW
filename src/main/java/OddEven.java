@@ -4,10 +4,10 @@ public class OddEven {
     // если число нечетное,
     // и “Even”, если число четное. Во всех остальных случаях результат будет “Undefined”.
 
-    public String OddEvenAlgorithm (int number){
-        if (number % 2 == 0 && number <= Integer.MAX_VALUE && number >= Integer.MIN_VALUE){
+    public String OddEvenAlgorithm (long number){
+        if (number % 2 == 0 && number <= 2147483647L && number >= -2147483648L){
             return "Even";
-        } else if (number % 2 != 0 && number <= Integer.MAX_VALUE && number >= Integer.MIN_VALUE) {
+        } else if (number % 2 != 0 && number <= 2147483647L && number >= -2147483648L) {
             return "Odd";
         } else {
             return "Undefined";

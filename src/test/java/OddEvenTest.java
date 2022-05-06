@@ -49,7 +49,7 @@ public class OddEvenTest {
     @Test
     public void testOddEvenHappyPathNotInt() {
 
-        int number = Integer.MAX_VALUE + 100;
+        long number = 2147483647L + 1;
         String expectedResult = "Undefined";
         OddEven od = new OddEven();
 

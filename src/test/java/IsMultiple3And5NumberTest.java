@@ -46,7 +46,7 @@ public class IsMultiple3And5NumberTest {
 
     @Order(4)
     @Test
-    public void testIsMultiple3And5NumberHappyPathNotMultiple3And5() {
+    public void testIsMultiple3And5NumberNotMultiple3And5() {
 
         int m = -88888;
         String expectedResult = "-1";
