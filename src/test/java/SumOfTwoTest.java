@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 
 public class SumOfTwoTest {
 
+
     @Order(1)
     @Test
     public void testSumOfTwoHappyPathPositiveNumber() {
