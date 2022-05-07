@@ -2,7 +2,6 @@ import org.junit.jupiter.api.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
-
 public class SumOfTwoTest {
 
     @Order(1)
